@@ -1,0 +1,21 @@
+<p>
+  If option doesn't exist among items you can add new one using
+  <b>[addTag]="true"</b>
+</p>
+
+<ng-select
+  [items]="items"
+  [addTag]="save"
+  multiple="true"
+  addTagText="Nueva etiqueta"
+  [(ngModel)]="selectedCompany"
+>
+</ng-select>
+
+<br />
+
+Selected value: {{selectedCompany | json}}
+
+<br />
+
+Elementos de la lista: {{items | json}}
